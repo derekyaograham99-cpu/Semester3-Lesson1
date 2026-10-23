@@ -6,18 +6,12 @@
 
 # Here is a script that gives the first 100 positive even numbers
 # You may use this as a starting template
-numbers = []
-for i in range(1, 101): # includes the first and excludes the last
-    numbers.append(i * 2)
-
-
-print(numbers)
-
-
-
-
-
-
+numbers = [0, 1]
+for i in range(1, 1000):
+    print(numbers[0])
+    bell = numbers.pop(0)
+    bell = bell + numbers[0]
+    numbers.append(bell)
 
 
 
